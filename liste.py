@@ -2,12 +2,13 @@
 
 from pathlib import Path
 import json
+import logging
+
 
 liste = []
 
 chemin = Path("/Users/marc/Documents/python/Mes projets/liste/liste.json")
 if not chemin.exists():
-    print("n'existe pas")
     with open(chemin, "w") as f:
         json.dump(liste, f)
 
